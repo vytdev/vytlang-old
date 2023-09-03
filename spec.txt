@@ -1,0 +1,50 @@
+VYT Language Specification
+Version: 0.1.0
+Revised: September 3, 2023 (Sunday)
+
+This document contains the specification of the VYT Language. You can found all
+the revisions of this specification including the source code of the project at
+the official repository on GitHub:
+
+    https://github.com/vytdev/vytlang
+
+Copyright (c) 2023 VYT. This project is under the MIT License. You can obtain a
+copy of this license at the link above.
+
+I. Introduction
+---------------
+
+Introducing a programming language that's as versatile as it is innovative,
+designed to empower developers with a multitude of programming paradigms and
+fine-grained control. This language embodies the belief that programming languages
+should offer flexibility, power, and adaptability across a broad spectrum of
+applications.
+
+In this world, you'll uncover an array of powerful features:
+
+  - Object-Oriented:
+    Harness the power of object-oriented design to craft modular and reusable code.
+  - Prototype-Based:
+    Embrace the elegance of prototype-based programming, allowing for dynamic
+    object creation and extension.
+  - Type Safety:
+    Write code with confidence, thanks to a robust type system that detects
+    errors at compile time.
+  - Functional:
+    Explore functional programming paradigms for concise and expressive solutions
+    to complex problems.
+  - Procedural:
+    Craft efficient procedural code when structured and straightforward solutions
+    are called for.
+  - Low-Level Control:
+    For the performance enthusiasts, this language offers fine-grained control
+    over memory management and resource optimization.
+
+With this language, there are no constraints on your creativity; it amplifies
+it. As you embark on your journey, you'll discover a world of possibilities, a
+welcoming community of like-minded developers, and a language that adapts to your
+unique needs. Whether you're developing web applications, system software,
+data-intensive solutions, or venturing into uncharted territories, it will be
+your trusted companion.
+
+Welcome to a new era of programming. Welcome to this innovative language.
