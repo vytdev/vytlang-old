@@ -387,12 +387,14 @@ EOF
 #
 # Run the following command to verify integrity:
 #       shasum -a 256 -c checksums.txt
+#       # or...
+#       sha256sum -c checksums.txt
 #
 # See the project repository for more details:
 #       https://github.com/vytdev/vytlang
 #
-$( cd $build_folder ; shasum -a 256 vyt       ; cd .. )
-$( cd $build_folder ; shasum -a 256 installer ; cd .. )
+$( cd $build_folder ; sha256sum vyt       ; cd .. )
+$( cd $build_folder ; sha256sum installer ; cd .. )
 EOF
     echo " done"
     

@@ -48,4 +48,6 @@ on the same folder and run the following command:
 
 ```bash
 shasum -a 256 -c checksums.txt
+# or...
+sha256sum -c checksums.txt
 ```
