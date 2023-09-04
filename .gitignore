@@ -1,0 +1,9 @@
+# built files
+build/
+*.o
+.watcher
+
+# distribution files
+vyt
+installer
+checksums.txt
