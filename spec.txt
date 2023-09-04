@@ -11,8 +11,9 @@ the official repository on GitHub:
 Copyright (c) 2023 VYT. This project is under the MIT License. You can obtain a
 copy of this license at the link above.
 
+
 I. Introduction
----------------
+--------------------------------------------------------------------------------
 
 Introducing a programming language that's as versatile as it is innovative,
 designed to empower developers with a multitude of programming paradigms and
@@ -48,3 +49,41 @@ data-intensive solutions, or venturing into uncharted territories, it will be
 your trusted companion.
 
 Welcome to a new era of programming. Welcome to this innovative language.
+
+
+II. Syntax
+--------------------------------------------------------------------------------
+
+This section describe the fundamental rules and structure of this language. It
+defines how programs are organized, how statements are constructed, and conventions
+for writing code in this language.
+
+Here are the basic syntax of the language:
+
+ a) Comments:
+    Comments are really important in programming languages, as it is used to
+    describe or disable the part of a code. This language uses the comment syntax
+    from most of the popular programming languages, and we support two types of
+    comments: single-line and multi-line. Heres how to use them:
+    
+    To create a single-line comment, write double slash '//' in your code:
+    
+        // comment here
+    
+    Single line comments allows you to write anything after the double slash until
+    the compiler found a new line character. Multi-line comments are different
+    as it can be wrapped over multiple lines. It can be created by writting a
+    forward slash followed by an asterisk:
+    
+        /* comment here */
+    
+        /* this comment
+        can be wrapped around
+        multiple-lines! */
+    
+    To specify the end of a multi-line comment, write an asterisk followed by a
+    forward slash. Comments in this language can't be nested, so writting the
+    following will produce a syntax error:
+    
+        /* /* your comment */ */
+    
