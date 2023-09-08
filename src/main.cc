@@ -15,6 +15,7 @@
 #include <list>
 using namespace std;
 
+#include "../include/iotty.h"
 #include "../include/util.h"
 using namespace vyt;
 
@@ -44,7 +45,7 @@ void show_help() {
 }
 
 int main(int argc, char *argv[]) {
-    bool readFromStdin = false;
+    bool readFromStdin = !STDIN_TTY;
     bool stopParsing = false;
     list<string> args;
 
@@ -116,6 +117,17 @@ int main(int argc, char *argv[]) {
 
     // show version
     if (arg_version) cout << VYT_VERSION << endl;
+
+    // file name included
+    if (nameFound) {
+        // read from stdin
+        if (readFromStdin) {
+            // stdin not redirected to a file
+            if (STDIN_TTY) {
+                terminateProcess("couldn't read stdin");
+            }
+        }
+    }
 
     return 0;
 }
