@@ -39,6 +39,7 @@ void show_help() {
     cout << "    args                   Arguments to pass to the program"   << endl;
     cout << ""                                                              << endl;
     cout << "NOTE: This project is under development"                       << endl;
+
     exit(0);
 }
 
@@ -46,20 +47,20 @@ int main(int argc, char *argv[]) {
     bool readFromStdin = false;
     bool stopParsing = false;
     list<string> args;
-    
+
     bool nameFound = false;
     string fileName;
-    
+
     // flags
     bool arg_help = false;
     bool arg_version = false;
-    
+
     // parse arguments
     size_t i = 1;
     for ( ; i < argc ; ++i ) {
         string arg = argv[i];
         size_t argLength = arg.length();
-        
+
         // stop parsing arguments
         if (stopParsing) {
             if (!nameFound) {
@@ -70,20 +71,20 @@ int main(int argc, char *argv[]) {
             args.push_back(arg);
             continue;
         }
-        
+
         // not a flag
         if (arg[0] != 45) {
             stopParsing = true;
             i--;
             continue;
         }
-        
+
         // read from stdin
         if (argLength == 1) {
             nameFound = readFromStdin = true;
             fileName = arg;
         }
-        
+
         // long flag
         if (arg[1] == arg[0]) {
             // stop flags
@@ -91,15 +92,15 @@ int main(int argc, char *argv[]) {
                 stopParsing = true;
                 continue;
             }
-            
+
             const string flagName = arg.substr(2);
             if (flagName == "help") arg_help = true;
             else if (flagName == "version") arg_version = true;
             else terminateProcess("unrecognized flag: " + arg, 2);
-            
+
             continue;
         }
-        
+
         // short flag
         for (const char f : arg.substr(1)) switch (f) {
             case 63: case 104: arg_help    = true; break; // ?, h
@@ -107,14 +108,14 @@ int main(int argc, char *argv[]) {
             default: terminateProcess((string)"unrecognized flag: -- " + f, 2);
         }
     }
-    
+
     // perform tasks
-    
+
     // print help
     if (arg_help) show_help();
-    
+
     // show version
     if (arg_version) cout << VYT_VERSION << endl;
-    
+
     return 0;
 }
