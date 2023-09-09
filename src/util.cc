@@ -5,7 +5,16 @@
 #include <string>
 using namespace std;
 
+#include "../include/main.h"
+
 namespace vyt {
+
+void debug(const string& message) {
+#if DEVMODE
+    // show debug message
+    cout << "[debug] " << message << endl;
+#endif
+}
 
 void terminateProcess(const string& message, int exitCode) {
     // show message

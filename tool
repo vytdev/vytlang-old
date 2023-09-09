@@ -24,6 +24,7 @@ cd $( dirname $0 )
 
 # paths
 license_file=./LICENSE                         # license file
+include_folder=./include                       # include folder
 source_folder=./src                            # source folder
 build_folder=./build                           # build folder
 # cache
@@ -36,7 +37,7 @@ integrity_file=$build_folder/checksums.txt     # integrity file
 
 # get version name from 'main.cc'
 version_name=$( \
-    cat $source_folder/main.cc | \
+    cat $include_folder/main.h | \
     sed -n "s/.*#define VYT_VERSION \"\(.*\)\".*/\1/p" \
 )
 

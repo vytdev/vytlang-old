@@ -6,6 +6,9 @@ using namespace std;
 
 namespace vyt {
 
+/* show debug message when DEVMODE (in main.h) */
+void debug(const string& message);
+
 /* stop process with message */
 void terminateProcess(const string& message, int exitCode = 0);
 

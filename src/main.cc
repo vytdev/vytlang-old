@@ -5,9 +5,6 @@
 // See LICENSE for more information
 //
 
-// The version name of this project
-#define VYT_VERSION "0.1.0"
-
 #include "../include/main.h"
 
 #include <iostream>
