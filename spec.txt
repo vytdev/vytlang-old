@@ -1,50 +1,48 @@
 VYT Language Specification
 Version: 0.1.0
-Revised: September 11, 2023 (Monday)
+Revised: September 14, 2023 (Thursday)
 
 This document outlines the detailed specifications of the VYT Language, an
-innovative and versatile programming language designed to empower developers with
-a wide range of programming paradigms and precise control. To stay up-to-date
-with revisions and access the source code, visit the official repository on GitHub:
+innovative and versatile programming language designed for use within a
+terminal. To stay up-to-date with revisions and access the source code, please
+visit the official repository on GitHub:
 
     https://github.com/vytdev/vytlang
 
 
 Copyright (c) 2023 VYT
 
-This project is licensed under the MIT License. A copy of the license is available
-at the provided link.
+This project is licensed under the MIT License. You can find a copy of the
+license available at the provided link.
 
 
 I. Introduction
 --------------------------------------------------------------------------------
 
-Unveiling a programming language as adaptable as it is innovative, the VYT Language
-is engineered to provide developers with an array of programming paradigms and
-fine-grained control. It is founded on the principle that programming languages
-should offer flexibility, power, and adaptability across diverse applications.
+Introducing a programming language as adaptable as it is innovative, the VYT
+Language is engineered to provide developers with a wide array of programming
+paradigms and fine-grained control. It is founded on the principle that
+programming languages should offer flexibility, power, and adaptability.
 
-In the realm of VYT, you'll discover a rich set of features:
+Within the realm of VYT, you will discover a rich set of features:
 
-  - Object-Oriented: Leverage the power of object-oriented design to create modular
-    and reusable code.
+  - Object-Oriented: Harness the power of object-oriented design to create
+    modular and reusable code.
   - Prototype-Based: Embrace the elegance of prototype-based programming, enabling
     dynamic object creation and extension.
   - Type Safety: Write code confidently with a robust type system that identifies
     errors at compile-time.
-  - Functional: Explore functional programming paradigms for succinct and expressive
-    solutions to intricate problems.
+  - Functional: Explore functional programming paradigms for concise and
+    expressive solutions to complex problems.
   - Procedural: Craft efficient procedural code when straightforward solutions
-    are warranted.
-  - Low-Level Control: For performance enthusiasts, VYT offers precise control
-    over memory management and resource optimization.
+    are required.
+  - Low-Level Control: For those who demand peak performance, VYT offers precise
+    control over memory management and resource optimization.
 
-With VYT, creativity knows no bounds; it amplifies your capabilities. As you
-embark on your programming journey, you'll find a world of opportunities, a
-supportive developer community, and a language adaptable to your unique
-requirements. Whether you're developing web applications, system software,
-data-intensive solutions, or venturing into unexplored territories, VYT will be
-your reliable companion.
+With VYT, your creative potential knows no bounds; it amplifies your capabilities.
+As you embark on your programming journey, you will find a world of opportunities,
+a supportive developer community, and a language that adapts to your unique
+requirements.
 
 Welcome to a new era of programming. Welcome to this innovative language.
 
@@ -52,30 +50,31 @@ Welcome to a new era of programming. Welcome to this innovative language.
 II. Syntax
 --------------------------------------------------------------------------------
 
-This section elucidates the fundamental rules and structure of the VYT Language.
-It defines how programs are organized, how statements are constructed, and
-conventions for writing code.
+This section provides a clear and comprehensive explanation of the fundamental
+rules and structure of the VYT Language. It defines how programs are organized,
+how statements are constructed, and conventions for writing code.
 
  a) Comments:
-    Comments are pivotal in programming languages as they provide descriptions
-    or allow for the disabling of code segments. VYT Language adopts the comment
-    syntax used in most popular programming languages, supporting both single-line
-    and multi-line comments.
+    Comments play a pivotal role in programming languages as they provide
+    descriptions or allow for the disabling of code segments. The VYT Language
+    adopts the comment syntax used in most popular programming languages,
+    supporting both single-line and multi-line comments.
 
-    To create a single-line comment, use a double slash '//' in your code:
+    To create a single-line comment, simply use a double slash '//' in your code:
 
         // This is a single-line comment
 
-    Single-line comments can extend until the compiler encounters a new line
+    Single-line comments continue until the compiler encounters a new line
     character.
 
     Multi-line comments can span multiple lines and are initiated with a forward
-    slash followed by an asterisk '/*' and concluded with an asterisk followed
-    by a forward slash '*/':
+    slash followed by an asterisk '/*' and concluded with an asterisk followed by
+    a forward slash '*/':
 
         /* This is a multi-line comment
-          spanning multiple lines! */
+           spanning multiple lines! */
 
-    Nested comments are not supported and will result in a syntax error:
+    Please note that nested comments are not supported as they may introduce
+    ambiguity and will result in a syntax error:
 
         /* /* This is a nested comment */ */
