@@ -13,6 +13,7 @@
 using namespace std;
 
 #include "../include/iotty.h"
+#include "../include/lexer.h"
 #include "../include/util.h"
 using namespace vyt;
 
@@ -124,6 +125,10 @@ int main(int argc, char *argv[]) {
                 terminateProcess("couldn't read stdin");
             }
         }
+
+        // lets debug the lexer for a while
+        Tokenizer lexer(readASCIIFile(fileName));
+        lexer.tokenize();
     }
 
     return 0;
