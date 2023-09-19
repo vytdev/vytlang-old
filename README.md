@@ -1,53 +1,117 @@
 # VYT Lang
 
-Custom programming language.
+![GitHub](https://img.shields.io/github/license/vytdev/vytlang)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/vytdev/vytlang)
+![GitHub last commit](https://img.shields.io/github/last-commit/vytdev/vytlang)
 
-> This project is under development
+Welcome to VYT Lang, a custom programming language project.
 
-## Installing
+> **Please note:** This project is currently under development.
 
-Go to [releases section](https://github.com/vytdev/vytlang/releases) and download
-the binary or the installer there. Then do the following steps:
+## Introduction
 
-If you downloaded the installer...
+VYT Lang is an innovative and versatile programming language designed for use
+within a terminal. It offers a wide array of programming paradigms and
+fine-grained control, making it suitable for a variety of applications.
 
-1. Open your terminal or command prompt
-2. `cd` to the folder where are the installer
-3. Run `./installer` or `sh ./installer`
-4. Answer all the prompts
-5. Install will begin after confirmation
+### Key Features
 
-If you downloaded the binary...
+- **Object-Oriented:** Harness the power of object-oriented design to create
+  modular and reusable code.
 
-1. Open your terminal or command prompt
-2. `cd` to the folder where are the binary
-3. Copy the binary where you want to install it, for example `/usr/local/bin`
+- **Prototype-Based:** Embrace the elegance of prototype-based programming,
+  enabling dynamic object creation and extension.
 
-    ```bash
-    cp ./vyt /usr/local/bin
-    ```
+- **Type Safety:** Write code confidently with a robust type system that
+  identifies errors at compile-time.
 
-4. Add execute permission
+- **Functional:** Explore functional programming paradigms for concise and
+  expressive solutions to complex problems.
 
-    ```bash
-    chmod u+x /usr/local/bin/vyt
-    ```
+- **Procedural:** Craft efficient procedural code when straightforward solutions
+  are required.
 
-5. (optional) Test if it is working by running:
+- **Low-Level Control:** For those who demand peak performance, VYT offers precise
+  control over memory management and resource optimization.
 
-    ```bash
-    /usr/local/bin/vyt -v
-    # or if the folder is in your PATH
-    vyt -v
-    ```
+With VYT, your creative potential knows no bounds; it amplifies your capabilities.
+As you embark on your programming journey, you will find a world of opportunities,
+a supportive developer community, and a language that adapts to your unique
+requirements.
+
+Welcome to a new era of programming. Welcome to this innovative language.
+
+<!--
+For more details and to stay up-to-date with revisions, please visit the
+[official documentation](https://vytdev.github.io/vytlang).
+-->
+
+## Installation
+
+You can download the latest release from the
+[Releases Section](https://github.com/vytdev/vytlang/releases). Choose between
+the binary or installer based on your preference.
+
+### Using the Installer
+
+1. Open your terminal or command prompt.
+2. Navigate to the folder containing the installer.
+3. Run the following command to start the installation process:
+
+   ```bash
+   ./installer
+   ```
+
+4. Follow the prompts to complete the installation.
+
+### Using the Binary
+
+1. Open your terminal or command prompt.
+2. Navigate to the folder containing the binary.
+3. Copy the binary to your desired installation location (e.g., `/usr/local/bin`)
+  using the following command:
+
+   ```bash
+   cp ./vyt /usr/local/bin
+   ```
+
+4. Add execute permissions to the binary:
+
+   ```bash
+   chmod u+x /usr/local/bin/vyt
+   ```
+
+5. (Optional) Test if the installation was successful by running:
+
+   ```bash
+   vyt -v
+   ```
 
 ## Verifying
 
-To verify the integrity of the downloaded files, also download `checksums.txt`
-on the same folder and run the following command:
+To ensure the integrity of the downloaded files, download `checksums.txt` from
+the same folder where you obtained the binary or installer. Then, run the
+appropriate command based on your system:
 
 ```bash
 shasum -a 256 -c checksums.txt
-# or...
+# Or, for Linux systems...
 sha256sum -c checksums.txt
 ```
+
+This will verify that the downloaded files match their expected checksums,
+providing an additional layer of security.
+
+## Language Specification
+
+For a detailed understanding of the VYT Language, please refer to the
+[VYT Language Specification](/spec.txt). It covers the language's rules, syntax,
+and other essential details.
+
+This project is licensed under the MIT License. You can find a copy of the license
+available at the provided [link](https://github.com/vytdev/vytlang/blob/main/LICENSE).
+
+For any questions, issues, or contributions, please visit our
+[GitHub repository](https://github.com/vytdev/vytlang).
+
+Thank you for choosing VYT Lang!

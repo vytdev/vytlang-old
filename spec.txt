@@ -1,6 +1,7 @@
+
 VYT Language Specification
-Version: 0.1.0
-Revised: September 14, 2023 (Thursday)
+Version: 0.1.1-alpha.1
+Revised: September 19, 2023 (Tuesday)
 
 This document outlines the detailed specifications of the VYT Language, an
 innovative and versatile programming language designed for use within a
@@ -17,7 +18,7 @@ license available at the provided link.
 
 
 I. Introduction
---------------------------------------------------------------------------------
+================================================================================
 
 Introducing a programming language as adaptable as it is innovative, the VYT
 Language is engineered to provide developers with a wide array of programming
@@ -47,8 +48,115 @@ requirements.
 Welcome to a new era of programming. Welcome to this innovative language.
 
 
-II. Syntax
---------------------------------------------------------------------------------
+II. Text Encoding
+================================================================================
+
+In the realm of programming, characters are the elemental units that construct
+your code. The VYT Language provides comprehensive support for various characters
+and escape sequences to empower your coding endeavors. This section offers an
+insightful exploration of the characters allowed and the escape sequences available
+to enhance your code.
+
+Supported Characters:
+---------------------
+
+Within our language, a wide array of characters is at your disposal, each with its
+distinct purpose in your code. These characters facilitate clarity and precision
+in your code construction:
+
+    Character        Code Point    Description
+    ---------        ----------    -----------
+
+    Space              32          The venerable space character is a versatile
+                                   tool for formatting and structuring code,
+                                   ensuring readability and organization.
+    Tab                9           Tabs offer an elegant means of structuring code,
+                                   aligning elements, and maintaining consistent
+                                   indentation for clarity.
+    Line Feed          10          The Line Feed character, a key element for
+                                   denoting line endings or creating new lines of
+                                   text.
+    Carriage Return    13          Carriage Return is employed to position the
+                                   cursor at the beginning of a line, aiding in
+                                   specific formatting requirements.
+    Basic Latin        33 - 126    Encompassing a comprehensive range of letters,
+                                   numbers, and symbols, these characters enable
+                                   the clear and concise expression of your code's
+                                   intent.
+
+These supported characters are the foundational elements of your code, serving as
+the canvas upon which your programs are crafted.
+
+Limitation for Compatibility:
+-----------------------------
+
+It's important to note that the selection of supported characters in our language
+is purposefully limited. This limitation arises from our commitment to ensuring
+compatibility with different platforms and environments. By adhering to this
+carefully curated set of characters, we strive to make your code not only expressive
+but also highly portable.
+
+Maintaining this balance between versatility and cross-platform compatibility is
+essential. It ensures that your code can seamlessly run on various systems,
+guaranteeing a smooth and consistent experience for both developers and users.
+
+While our character set may seem limited, it is intentionally designed to strike
+the right balance between functionality and compatibility, allowing you to code
+with confidence across diverse environments.
+
+Escape Sequences:
+-----------------
+
+Escape sequences are a valuable resource for representing special characters and
+control codes in a human-readable format. They elevate code clarity and portability,
+allowing you to insert characters that might be challenging to input directly into
+your code. Explore the spectrum of escape sequences at your disposal:
+
+    Sequence    Description
+    --------    -----------
+
+    \n          Employ this sequence to introduce a newline character, facilitating
+                text division and line breaks.
+    \r          Utilize this sequence to position the cursor at the beginning of
+                a line, often in conjunction with \n to create new lines.
+    \t          Incorporate tabs to maintain consistent indentation and alignment
+                within your code.
+    \b          Represent a backspace character to address specific text manipulation
+                requirements.
+    \f          Integrate form feed to advance the printing position to the next
+                page or initiate screen clearing.
+    \o          Specify characters using octal notation, enhancing the expressiveness
+                of your code.
+    \a          Elicit an audible or visible alert, serving as an effective means
+                of notification.
+    \e          Introduce the escape character, frequently employed in control
+                sequences.
+    \s          Employ this sequence to unambiguously represent a space character
+                in contexts where clarity is paramount.
+    \\          Escape a backslash character when it forms part of a larger text
+                structure.
+    \'          Safely incorporate single quotes within char literals, preventing
+                conflicts.
+    \"          Embed double quotes within string literals, ensuring accurate
+                representation.
+    \xFF        Specify characters using hexadecimal notation, broadening the
+                character range at your disposal.
+    \uFFFF      Access a vast array of Unicode characters through this escape
+                sequence, enhancing code expressiveness.
+    \UFFFFFFFF  Explore an extensive palette of 32-bit Unicode characters using
+                this escape sequence, expanding your creative possibilities.
+
+These escape sequences enhance code clarity and portability, enabling you to address
+a diverse array of character-related scenarios with confidence.
+
+By maintaining this balance between versatility and compatibility, our language
+empowers you to craft expressive, readable, and versatile code that seamlessly
+adapts to diverse platforms and environments. Harness these tools to create
+innovative and effective programs tailored to your unique requirements.
+
+
+III. Syntax
+================================================================================
 
 This section provides a clear and comprehensive explanation of the fundamental
 rules and structure of the VYT Language. It defines how programs are organized,
@@ -78,3 +186,48 @@ how statements are constructed, and conventions for writing code.
     ambiguity and will result in a syntax error:
 
         /* /* This is a nested comment */ */
+
+
+IV. Versioning
+================================================================================
+
+The VYT Language project follows a structured versioning specification to ensure
+compatibility, transparency, and reliability throughout its development lifecycle.
+This specification defines how project versions are managed, what changes are
+introduced, and how deprecations are handled.
+
+Key Aspects of the Versioning Specification:
+--------------------------------------------
+
+  - Versioning Scheme: We employ a SemVer versioning system to assign versions.
+    This includes major, minor, and patch versions to clearly convey the nature
+    and impact of each update.
+  - Backward Compatibility: Our commitment to maintaining backward compatibility
+    means that existing integrations and applications can confidently upgrade to
+    newer versions without disruptions.
+  - Deprecation Policy: When changes necessitate the deprecation of specific
+    features or endpoints, we follow a well-documented deprecation policy. This
+    provides users with a clear roadmap for migrating to updated versions.
+  - Release Notes: Detailed release notes accompany each version, offering insights
+    into the changes, improvements, bug fixes, and deprecations included in the
+    update. These notes serve as a valuable resource for developers and users.
+
+Using the Versioning Specification:
+-----------------------------------
+
+Developers utilizing the VYT Language can leverage the versioning specification
+to:
+
+  - Plan for upcoming updates and understand the implications for their projects.
+  - Ensure that integrations and applications remain compatible with the latest
+    versions.
+  - Stay informed about deprecations and recommended migration paths through
+    release notes.
+
+By adopting this versioning approach, we aim to provide a consistent and dependable
+experience for users of the VYT Language. It ensures that the project evolves with
+clarity and predictability.
+
+For comprehensive details on the versioning scheme and policies, please refer to
+the official SemVer Specification <https://semver.org>.
+
