@@ -6,7 +6,21 @@
 
 Welcome to VYT Lang, a custom programming language project.
 
-> **Please note:** This project is currently under development.
+## Project Status
+
+:construction: **Under Development - Work in Progress** :construction:
+
+VYT Lang is currently in its early stages of development. We are actively
+researching, designing, and specifying the project to ensure its success. This
+means that the language and its features are subject to change, and we are
+continuously working to improve and refine the language.
+
+We appreciate your interest in VYT Lang and your patience as we work towards a
+stable and robust release. Feel free to follow our progress on our
+[GitHub repository](https://github.com/vytdev/vytlang) and provide input or
+feedback to help shape the future of this project.
+
+Thank you for your support!
 
 ## Introduction
 
@@ -101,6 +115,20 @@ sha256sum -c checksums.txt
 
 This will verify that the downloaded files match their expected checksums,
 providing an additional layer of security.
+
+## Windows Support
+
+As of the current release, VYT Lang does not yet support Windows operating
+systems. We are actively working on adding Windows compatibility in future
+updates. We appreciate your patience and understanding.
+
+If you are a Windows user and would like to stay informed about our progress or
+provide input on Windows support development, please visit our
+[GitHub repository](https://github.com/vytdev/vytlang) for updates and discussions.
+Your feedback is valuable to us, and we are committed to making VYT Lang accessible
+to a wider audience.
+
+Thank you for your interest in VYT Lang!
 
 ## Language Specification
 
