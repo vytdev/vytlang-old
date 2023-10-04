@@ -8,12 +8,21 @@ Welcome to VYT Lang, a custom programming language project.
 
 ## Project Status
 
+<!--
 :construction: **Under Development - Work in Progress** :construction:
 
 VYT Lang is currently in its early stages of development. We are actively
 researching, designing, and specifying the project to ensure its success. This
 means that the language and its features are subject to change, and we are
 continuously working to improve and refine the language.
+
+-->
+
+**Deprecated**
+
+This repository was gone deprecated since October 4, 2023. It becomes deprecated
+due to inactivity cause we're migrating to C! See the main repository here:
+https://github.com/vytdev/vytlang
 
 We appreciate your interest in VYT Lang and your patience as we work towards a
 stable and robust release. Feel free to follow our progress on our
